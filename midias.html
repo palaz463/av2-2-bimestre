@@ -28,19 +28,39 @@
 
     <img src="https://wallpapers.com/images/hd/david-goggins-training-with-troops-as773corgax6u3rk.jpg" alt="David Goggins treinando" width="300">
 
-    <h2>Vídeo</h2>
-    
+    <h2>Vídeo Motivacional</h2>
 
-<h2>Vídeo Motivacional</h2>
+    <div class="youtube-player" data-video-id="S7Gv4qpZHMI">
+    <div class="youtube-player__screen">
+        <div class="youtube-player__loading">Carregando video...</div>
+        <div class="youtube-player__video"></div>
+    </div>
 
-<iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/TsQMdKLkLAk"
-    title="Vídeo David Goggins"
-    frameborder="0"
-    allowfullscreen>
-</iframe>
+    <div class="youtube-player__controls">
+        <div class="youtube-player__progress">
+            <span class="youtube-player__current">0:00</span>
+            <input class="youtube-player__seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Progresso do video">
+            <span class="youtube-player__duration">0:00</span>
+        </div>
+
+        <div class="youtube-player__buttons">
+            <button class="youtube-player__play" type="button" aria-label="Reproduzir">Play</button>
+            <button class="youtube-player__mute" type="button" aria-label="Silenciar">Som</button>
+            <input class="youtube-player__volume" type="range" min="0" max="100" value="80" aria-label="Volume">
+
+            <select class="youtube-player__speed" aria-label="Velocidade do video">
+                <option value="0.5">0.5x</option>
+                <option value="0.75">0.75x</option>
+                <option value="1" selected>1x</option>
+                <option value="1.25">1.25x</option>
+                <option value="1.5">1.5x</option>
+                <option value="2">2x</option>
+            </select>
+
+            <button class="youtube-player__fullscreen" type="button" aria-label="Tela cheia">Full</button>
+        </div>
+    </div>
+    </div>
 
     
     <h2>Curiosidades</h2>
@@ -59,5 +79,6 @@
     <p>Fan page sobre David Goggins</p>
 </footer>
 
+<script src="js/youtube-player.js"></script>
 </body>
 </html>
