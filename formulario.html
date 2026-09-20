@@ -34,32 +34,21 @@
             </div>
             <div class="col-lg-7">
                 <form class="card p-3">
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Digite seu email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="idade" class="form-label">Idade</label>
-                        <input type="number" class="form-control" id="idade" placeholder="Digite sua idade">
-                    </div>
-                    <div class="mb-3">
-                        <label for="interesse" class="form-label">Interesse</label>
-                        <select class="form-select" id="interesse">
-                            <option>Selecione</option>
-                            <option>Treinamento</option>
-                            <option>Motivação</option>
-                            <option>Disciplina</option>
-                        </select>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" autocomplete="email" required>
+                        </div>
                     </div>
                     <div class="mb-3">
                         <label for="mensagem" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-warning">Enviar</button>
+                    <button type="submit" class="btn btn-warning">Enviar mensagem</button>
                 </form>
             </div>
         </div>
